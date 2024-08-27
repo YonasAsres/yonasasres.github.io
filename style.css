@@ -1,3 +1,4 @@
+/* Basic reset and styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -44,6 +45,7 @@ header ul li a {
     text-decoration: none;
 }
 
+/* About Section */
 .about-section {
     display: flex;
     flex-wrap: wrap;
@@ -74,6 +76,60 @@ header ul li a {
     margin-bottom: 10px;
 }
 
+/* Profile Section */
+.profile {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #777;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+}
+
+.buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: #007BFF;
+}
+
+/* Skills Section */
 #skills {
     background-color: #333;
     color: #fff;
@@ -81,27 +137,52 @@ header ul li a {
     text-align: center;
 }
 
-#skills ul {
-    list-style: none;
+.skills-container {
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-#skills ul li {
-    flex: 1;
-    margin: 10px 0;
-    min-width: 150px;
+.skill-bar {
+    margin: 20px 0;
 }
 
+.skill-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-progress {
+    background-color: #555;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress .progress {
+    background-color: #4caf50;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Contact Section */
 #contact {
-    background-color: #f4f4f4;
+    background-color: #333;
+    color: #fff;
     padding: 40px 20px;
     text-align: center;
 }
 
+#contact a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -110,8 +191,23 @@ footer {
 }
 
 @media(max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
     .about-section {
         flex-direction: column;
+        padding: 10px;
     }
 
     .about-content {
@@ -119,8 +215,7 @@ footer {
         margin-top: 20px;
     }
 
-    #skills ul {
-        flex-direction: column;
-        align-items: center;
+    .profile img {
+        width: 100px;
     }
 }
