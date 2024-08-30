@@ -116,6 +116,10 @@ a {
 
 }
 
-.totheleft{
-    text-align: left;
+.totheleft {
+    float: left;
+    margin-left: 10px; /* Adjust this value as needed */
+    text-decoration: none; /* Remove underline from the link */
+    color: #f6d3d3; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
 }
