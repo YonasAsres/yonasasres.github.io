@@ -122,4 +122,5 @@ a {
     text-decoration: none; /* Remove underline from the link */
     color: #1d0707; /* Set the text color */
     font-weight: bold; /* Make the text bold */
+    font-size:60px
 }
